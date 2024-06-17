@@ -23,7 +23,7 @@ public class C_condition {
 		if (price >= 10000) {
 			discount += 1000;
 			price -= discount;
-			System.out.println("1만원 이상 구매 시 할인금액 = " + discount);
+			System.out.println("1만원 이상 구매 시 할인금액 = " + discount); 
 		}
 		if (age == 25) {
 			discount += 1000;

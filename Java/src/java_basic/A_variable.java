@@ -12,7 +12,7 @@ public class A_variable {
 		System.out.println(n1); // 다시 a값을 출력하면 50 출력
 
 		int n2 = 2, n3 = 3; // 여러 변수 선언과 초기화를 동시에 가능
-		System.out.println(n1 + n2 + n3); // 5 + 2 + 3 = 10 출력
+		System.out.println(n1 + n2 + n3); // 5 + 2 + 3 = 10 출력 
 
 		// 변수의 타입 : 각 변수는 지정한 타입에 맞는 값을 사용해야함
 		int i = 1; // 정수
