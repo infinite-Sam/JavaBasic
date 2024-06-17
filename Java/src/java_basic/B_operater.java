@@ -14,7 +14,7 @@ public class B_operater {
 
 		// 덧셈
 		int sum = a + b;
-		System.out.println("a + b = " + sum); // 5 + 2 = 7 
+		System.out.println("a + b = " + sum); // 5 + 2 = 7
 
 		// 뺄셈
 		int diff = a - b;
