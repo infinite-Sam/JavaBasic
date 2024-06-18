@@ -4,50 +4,71 @@ public class C_condition {
 
 	public static void main(String[] args) {
 		// 조건문
-
 		// if-else문
 		int score = 70;
-		if (score >= 80) { // score가 80이상이면
+		if (score >= 90) { // score가 90이상이면
 			System.out.println("A등급입니다."); // 출력
-		} else if (score >= 60) { // score가 80이상이 아니고 60이상이면
+		} else if (score >= 80) { // score가 80이상, 90미만 이면
 			System.out.println("B등급입니다."); // 출력
+		} else if (score >= 70) { // score가 70이상, 80미만 이면
+			System.out.println("C등급입니다."); // 출력
 		} else { // 아무것도 아니면
-			System.out.println("불합격입니다."); // 출력
+			System.out.println("D등급입니다."); // 출력
 		}
 
 		// 각각 따로 실행해야되는 경우도 있는데 이때는 if문을 각각 따로 써야됨
-		int price = 10000;
-		int age = 25;
-		int discount = 0;
-
-		if (price >= 10000) {
-			discount += 1000;
-			price -= discount;
-			System.out.println("1만원 이상 구매 시 할인금액 = " + discount);
+		char grade;
+		score = 90;
+		if (score >= 90) {
+			grade = 'A';
+			System.out.println("등급은 " + grade);
 		}
-		if (age == 25) {
-			discount += 1000;
-			price -= discount;
-			System.out.println("25세가 구매 시 할인금액 = " + discount);
-		} else {
-			System.out.println("할인 미적용");
+		if (score >= 80) {
+			grade = 'B';
+			System.out.println("등급은 " + grade);
 		}
-		System.out.println("총 금액 = " + price);
-
-		if (price >= 10000 && age == 25) {
-			discount += 2000;
-			price -= discount;
-			System.out.println("25세, 1만원 이상 구매 후 금액 = " + price);
-		} else if (price >= 10000) {
-			discount += 1000;
-			price -= discount;
-			System.out.println("1만원 이상 구매 후 금액 = " + price);
-		} else {
-			discount = 0;
-			price -= discount;
-			System.out.println("할인 미적용 금액 = " + price);
+		if (score >= 70) {
+			grade = 'C';
+			System.out.println("등급은 " + grade);
 		}
+		if (score < 70) {
+			grade = 'D';
+			System.out.println("등급은 " + grade);
+		}
+		
+		// switch문 : if문보다 직관적임, 특정 case와 같은지만 체크 가능
+		grade = 'B';
+		switch (grade) { // 괄호안의 값(조건)이 case의 값과 같으면 실행, 값만 넣을수 있음
+		case 'A':
+			System.out.println("점수는 90점 이상입니다.");;
+			break; // break문이 없으면 다음 break까지 실행
+		case 'B':
+			System.out.println("점수는 80점 이상입니다.");;
+			break;
+		case 'C':
+			System.out.println("점수는 70점 이상입니다.");;
+			break;
+		default: // else와 같음
+			System.out.println("점수는 70점 미만입니다.");
+		break;
+		}
+		System.out.println("등급은 " + grade);
 
+		// 삼항 연산자
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
