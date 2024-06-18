@@ -54,7 +54,6 @@ public class C_condition {
 		}
 		System.out.println("등급은 " + grade);
 
-		// 삼항 연산자
 		
 	}
 
